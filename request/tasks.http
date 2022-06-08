@@ -1,0 +1,26 @@
+### Create task
+POST http://localhost:3030/api/tasks
+Content-Type: application/json
+
+{
+    "title": "MyHomeork",
+    "description": "I dont like"
+}
+
+### List all Tasks
+GET http://localhost:3030/api/tasks
+
+### list task by Id
+GET http://localhost:3030/api/tasks/1
+
+### Update task
+PUT http://localhost:3030/api/tasks/1
+Content-Type: application/json
+
+{
+    "title": "Avenged update",
+    "description": "I like update"
+}
+
+### Delete task
+DELETE http://localhost:3030/api/tasks/1
